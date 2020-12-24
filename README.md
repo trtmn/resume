@@ -12,4 +12,4 @@ Attempting to learn the CSS basics, some JS, and pull it all togehter
 and make a decent looking web resume.
 
 View the demo at:
-http://trtmn.github.io/resume
+http://trtmn.com/resume
