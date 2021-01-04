@@ -39,6 +39,10 @@
   }
 }
 
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-family: 'San Fran';
+}
+
 body {
   font-family: 'San Fran', sans-serif;
   font-size: 14px;
