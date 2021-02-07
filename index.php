@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
+<?php
+
+$cURLConnection = curl_init();
+
+curl_setopt($cURLConnection, CURLOPT_URL, 'https://maker.ifttt.com/trigger/resume_view/with/key/UZnw138_fuCTjF429_khN');
+curl_setopt($cURLConnection, CURLOPT_RETURNTRANSFER, true);
+
+$phoneList = curl_exec($cURLConnection);
+curl_close($cURLConnection);
+
+$jsonArrayResponse - json_decode($phoneList);?>
 
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
