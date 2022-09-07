@@ -46,23 +46,23 @@ $jsonArrayResponse - json_decode($phoneList);?>
     <meta name="theme-color" content="#ffffff">
     <!-- FavIcon / AppleTouch End -->
     <!--OG Info-->
-    <meta property="og:title" content="Matt Troutman • Resume" />
+    <meta property="og:title" content="Matt Troutman • Resume / CV" />
     <meta property="og:site_name" content="trtmn.com" />
     <meta property="og:url" content="https://trtmn.com/resume/"/>
-    <meta property="og:description" content="Matt Troutman is a Husband, Dad, and a technophile. In the tech industry for over 15 years, Matt is passionate about introducing new technologies to people." />
+    <meta property="og:description" content="Matt Troutman. Professional Nerd. Amateur Human." />
     <meta property="og:image" content="https://trtmn.com/resume/resume.png" />
     <!-- OG Info End -->
     <!--Standard Metadata-->
     <meta name="keywords" content="Quality Assurance, quality, SurveyMonkey, technophile, musician, Matt Troutman, trtmn, Truett Troutman, Mid-America Nazarene Univerity, Sarah Troutman, Music, Django, Genius Lounge, Apple, Genius, GeniusBar, Genius Bar, Webmaster, San Jose, California, San Francisco, Marin, Palo Alto, San Mateo, Mateo, Matias, Kirksville MO, Ethel MO, Fishy, Topeka KS, Olathe, Gardner KS, Gardner, technology, Lawyer, Injury Lawyer, Attorney" />
     <meta name="author" content="Matt Troutman" />
-    <meta name="description" content="Matt Troutman is a Husband, Dad, and a technophile. In the tech industry for over 15 years, Matt is passionate about introducing new technologies to people." />
+    <meta name="description" content="Matt Troutman. Professional Nerd. Amateur Human." />
     <!-- Standard Metadata End -->
     <!--Twitter Card Info-->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@trtmn" />
     <meta name="twitter:creator" content="@trtmn" />
     <meta name="twitter:title" content="Matt Troutman" />
-    <meta name="twitter:description" content="Matt Troutman is a Husband, Dad, and a technophile. In the tech industry for over 15 years, Matt is passionate about introducing new technologies to people." />
+    <meta name="twitter:description" content="Matt Troutman. Professional Nerd. Amateur Human." />
     <meta name="twitter:image" content="https://trtmn.com/resume/resume.png" />
     <!-- Twitter Card Info End -->
 
@@ -107,6 +107,17 @@ $jsonArrayResponse - json_decode($phoneList);?>
     <div class="resume-body printit">
       <div class="nest">
         <h3>Experience</h3>
+        <div id="mmhmm" class="nest block-margin">
+          <h4 class="thin jobheader">Senior Quality Assurance Engineer • mmhmm • San Francisco, CA • March 2021 - September 2022</h4>
+          <div class="nest">
+            • Maintained project test case management database <br>
+            • Created test plans during feature planning <br>
+            • Designed and coded automated test cases in Python (PyTest) for nightly regression testing <br>
+            • Performed manual regression testing to ensure product quality was maintained <br>
+            • QA contact for production-related issues<br>
+            • Lead QA efforts in SurveyMonkey GDPR compliance, organizing efforts across multiple teams, and coordinating release testing between developers and QA staff
+          </div>
+
         <div id="SMQA" class="nest block-margin">
           <h4 class="thin jobheader">Quality Assurance Engineer II • SurveyMonkey • San Mateo, CA • Oct 2014 - Sep 2020</h4>
           <div class="nest">
