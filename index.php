@@ -107,12 +107,11 @@ $jsonArrayResponse - json_decode($phoneList);?>
     <div class="resume-body printit">
       <div class="nest">
         <h3>Experience</h3>
-        <div id="mmhmm" class="nest block-margin">
-          <h4 class="thin jobheader">Senior Quality Assurance Engineer • mmhmm • San Francisco, CA • March 2021 - September 2022</h4>
+        <div id="mmhmm" class="nest nest block-margin">
+          <h4 class="thin jobheader">Senior Quality Assurance Engineer • mmhmm • San Fransisco, CA • March 2021 - Sep 2022</h4>
           <div class="nest">
             • Maintained project test case management database <br>
             • Created test plans during feature planning <br>
-            • Designed and coded automated test cases in Python (PyTest) for nightly regression testing <br>
             • Performed manual regression testing to ensure product quality was maintained <br>
             • QA contact for production-related issues<br>
             • Lead QA efforts in SurveyMonkey GDPR compliance, organizing efforts across multiple teams, and coordinating release testing between developers and QA staff
