@@ -1,18 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-<?php
-
-$cURLConnection = curl_init();
-
-curl_setopt($cURLConnection, CURLOPT_URL, 'https://maker.ifttt.com/trigger/resume_view/with/key/UZnw138_fuCTjF429_khN');
-curl_setopt($cURLConnection, CURLOPT_RETURNTRANSFER, true);
-
-$phoneList = curl_exec($cURLConnection);
-curl_close($cURLConnection);
-
-$jsonArrayResponse - json_decode($phoneList);?>
-
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
