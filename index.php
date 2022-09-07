@@ -63,7 +63,7 @@ $jsonArrayResponse - json_decode($phoneList);?>
     <meta name="twitter:creator" content="@trtmn" />
     <meta name="twitter:title" content="Matt Troutman" />
     <meta name="twitter:description" content="Matt Troutman is a Husband, Dad, and a technophile. In the tech industry for over 15 years, Matt is passionate about introducing new technologies to people." />
-    <meta name="twitter:image" content="https://trtmn.com/twitter_card_formal.png" />
+    <meta name="twitter:image" content="https://trtmn.com/resume/resume.png" />
     <!-- Twitter Card Info End -->
 
     <!-- schema.org stuff -->
@@ -96,7 +96,7 @@ $jsonArrayResponse - json_decode($phoneList);?>
     <!-- End Google Tag Manager (noscript) -->
     <!-- Header Block -->
     <div class="header">
-      <img id="gravatar" src="99b2ac4667f94cb56b11257b2e4a6d11.jpg" alt="Image" class="img-responsive center-block img-circle">
+      <img id="gravatar" src="https://s.gravatar.com/avatar/1c4c5d0074d93391a3987d39e281bee4?s=500" alt="Image" class="img-responsive center-block img-circle">
       <h2 class="thin" id="name">Matt Troutman</h2>
       <span class="" id="phone_number">***REMOVED***</span><span class="dontprint"><br><br></span>
       <a class="dontprint" href="https://trtmn.com/resume/Matt%20Troutman.pdf" target="_blank"><button style="color:black;" type="button" class="btn btn-outline-dark">Printable Resume</button></a>
