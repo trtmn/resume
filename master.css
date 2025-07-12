@@ -201,6 +201,25 @@
     page-break-inside: avoid;
     column-span: all;
   }
+  /* Increase vertical spacing below section headers */
+  h3 {
+    margin-bottom: 8px;
+  }
+  /* Increase vertical spacing below job headers */
+  .jobheader {
+    margin-bottom: 6px;
+  }
+  /* Increase vertical spacing between bullet points/items */
+  .nest .nest > div > br {
+    margin-bottom: 8px;
+  }
+  .nest .nest > div {
+    margin-bottom: 8px;
+  }
+  /* Increase vertical spacing between main sections */
+  .block-margin {
+    margin-top: 16px;
+  }
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
