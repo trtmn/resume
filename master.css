@@ -11,7 +11,7 @@
         font-size: 14px;
       }
 }
-/* Source Code Pro font is loaded via Google Fonts in HTML */
+/* Noto Sans font is loaded via Google Fonts in HTML */
 @media print {
   .dontprint{
     display: none;
@@ -151,6 +151,34 @@
     margin-bottom: 0.5px;
   }
   
+  /* Two-column layout for bullet points in job descriptions only */
+  .nest .nest > div {
+    column-count: 2;
+    column-gap: 24px;
+    column-fill: balance;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  /* Ensure each bullet point stays on its own line */
+  .nest .nest > div > br {
+    display: block;
+    content: "";
+    margin-bottom: 2px;
+  }
+  .nest .nest > div {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    margin-bottom: 2px;
+  }
+
+  /* Special handling for skills section */
+  .nest:last-child .nest {
+    column-count: 2;
+    column-gap: 15px;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  
   /* Ensure header doesn't take too much space */
   .header img {
     max-height: 50px;
@@ -161,14 +189,26 @@
     margin: 0;
     padding: 0;
   }
+  /* Ensure job headers don't get split */
+  .jobheader {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    column-span: all;
+  }
+  /* Ensure section headers don't get split */
+  h3 {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    column-span: all;
+  }
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-    font-family: 'Source Code Pro', monospace;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 body {
-  font-family: 'Source Code Pro', monospace;
+  font-family: 'Noto Sans', sans-serif;
 }
 h2{
   margin-top: 10px;
