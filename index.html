@@ -1,13 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KL99HHD');</script>
-<!-- End Google Tag Manager -->
+    <!-- Umami Analytics -->
+    <script async defer src="https://umami.trtmn.com/script.js" data-website-id="572340b3-bf97-4cad-8eba-345c95e69eb9"></script>
+    <!-- End Umami Analytics -->
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -18,6 +14,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./master.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500&display=swap" rel="stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Matt Troutman • Resume / CV</title>
@@ -76,12 +75,47 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!--    </script>-->
 <!--  Redirect to https  -->
 
+    <!-- Print optimization script -->
+    <script>
+      // Function to ensure resume fits on one page
+      function optimizeForPrint() {
+        const resumeBody = document.querySelector('.resume-body');
+        if (!resumeBody) return;
+        
+        // Check if content overflows
+        const checkOverflow = () => {
+          const rect = resumeBody.getBoundingClientRect();
+          const windowHeight = window.innerHeight;
+          return rect.height > windowHeight;
+        };
+        
+        // Reduce font sizes if content overflows
+        const reduceFontSizes = () => {
+          const elements = document.querySelectorAll('h2, h3, h4, .nest, body');
+          elements.forEach(el => {
+            const currentSize = parseFloat(window.getComputedStyle(el).fontSize);
+            if (currentSize > 6) { // Don't go below 6px
+              el.style.fontSize = (currentSize - 0.5) + 'px';
+            }
+          });
+        };
+        
+        // Apply optimizations if needed
+        if (checkOverflow()) {
+          reduceFontSizes();
+        }
+      }
+      
+      // Run optimization on page load and before print
+      window.addEventListener('load', optimizeForPrint);
+      window.addEventListener('beforeprint', optimizeForPrint);
+      
+      // Also run when window is resized
+      window.addEventListener('resize', optimizeForPrint);
+    </script>
+
   </head>
   <body>
-  <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KL99HHD"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
     <!-- Header Block -->
     <div class="header">
       <img id="gravatar" src="https://s.gravatar.com/avatar/1c4c5d0074d93391a3987d39e281bee4?s=500" alt="Image" class="img-responsive center-block img-circle">
