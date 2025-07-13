@@ -1,0 +1,15 @@
+---
+description: when working with @index.html or @master.css
+alwaysApply: false
+
+# Print and Layout Guide for Resume
+
+- The resume must always fit on a single printed page (US Letter).
+- Use the "Noto Sans" font from Google Fonts as the primary typeface.
+- All sections, including bullet points and skills, should be presented in a single column for print.
+- Prevent page or column breaks within section headers (`h3`) and job headers (`.jobheader`).
+- Maintain compact vertical spacing throughout, but ensure extra space below section headers, job headers, between bullet points, and between main sections for clarity.
+- Keep the header and resume body together; avoid page breaks immediately after the header.
+- All print-specific CSS is in `master.css`, using `@media print` queries.
+- The HTML structure is defined in `index.html`.
+---

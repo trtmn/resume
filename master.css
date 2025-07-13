@@ -146,37 +146,20 @@
     margin: 2px 0;
   }
   
-  /* Reduce spacing in project descriptions */
-  .nest .nest div {
-    margin-bottom: 0.5px;
-  }
-  
-  /* Two-column layout for bullet points in job descriptions only */
+  /* Remove two-column layout for bullet points in job descriptions */
   .nest .nest > div {
-    column-count: 2;
-    column-gap: 24px;
-    column-fill: balance;
-    padding-left: 4px;
-    padding-right: 4px;
+    column-count: 1;
+    column-gap: 0;
+    column-fill: initial;
+    padding-left: 0;
+    padding-right: 0;
   }
-  /* Ensure each bullet point stays on its own line */
-  .nest .nest > div > br {
-    display: block;
-    content: "";
-    margin-bottom: 2px;
-  }
-  .nest .nest > div {
-    break-inside: avoid;
-    page-break-inside: avoid;
-    margin-bottom: 2px;
-  }
-
-  /* Special handling for skills section */
+  /* Remove two-column layout for skills section */
   .nest:last-child .nest {
-    column-count: 2;
-    column-gap: 15px;
-    padding-left: 4px;
-    padding-right: 4px;
+    column-count: 1;
+    column-gap: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
   
   /* Ensure header doesn't take too much space */
@@ -219,6 +202,27 @@
   /* Increase vertical spacing between main sections */
   .block-margin {
     margin-top: 16px;
+  }
+  .contact-info {
+    display: none !important;
+  }
+  .contact-info-print {
+    display: none !important;
+  }
+}
+
+@media print {
+  .contact-info {
+    display: none !important;
+  }
+  .contact-info-print {
+    display: block !important;
+  }
+}
+
+@media screen {
+  .contact-info-print {
+    display: none !important;
   }
 }
 
@@ -294,4 +298,108 @@ a:focus{
 .footerlink {
   margin: 5px;
 
+}
+
+@media print {
+  .header-block {
+    break-after: avoid;
+    page-break-after: avoid;
+    margin-bottom: 4px;
+    padding-bottom: 0;
+  }
+  .header {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  @page {
+    size: letter;
+    margin: 0.2in;
+  }
+  body {
+    font-size: 8.5px;
+    line-height: 1.08;
+    margin: 0;
+    padding: 0;
+    max-height: 100vh;
+    overflow: hidden;
+  }
+  h3 {
+    margin-bottom: 5px;
+  }
+  .jobheader {
+    margin-bottom: 4px;
+  }
+  ul, ol {
+    margin-top: 0;
+    margin-bottom: 4px;
+    padding-left: 18px;
+  }
+  li {
+    margin-bottom: 2px;
+    font-weight: 300;
+    font-family: inherit;
+  }
+  .block-margin {
+    margin-top: 8px;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0;
+    margin-bottom: 0;
+  }
+  .header-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+  }
+  .header-row2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    margin-top: 2px;
+    margin-bottom: 4px;
+  }
+  #gravatar {
+    width: 48px;
+    height: 48px;
+    margin: 0;
+    display: block;
+  }
+  #name, .pronouns, .contact-info-print {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  .pronouns {
+    margin: 0 !important;
+    padding: 0 !important;
+    display: inline;
+  }
+  .header-block {
+    margin-bottom: 4px;
+  }
+}
+
+@media print {
+  .header-block {
+    margin-top: 32px;
+    margin-bottom: 4px;
+  }
+}
+
+@media print {
+  .header-row2 {
+    font-weight: 300;
+    margin-top: 10px;
+  }
 }

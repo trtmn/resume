@@ -23,7 +23,7 @@
     <!--    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">-->
 
     <!-- FavIcon / AppleTouch -->
-    <link rel="apple-touch-icon-precomposed" sizes="500x500" href="https://s.gravatar.com/avatar/99b2ac4667f94cb56b11257b2e4a6d11.png?s=500" />
+    <link rel="apple-touch-icon-precomposed" sizes="500x500" href="https://s.gravatar.com/avatar/878ca4931b0ca4dbe828346c8b0e1a706eb44d84ae540d40b261b08852063d32?s=500" />
     <link rel="icon" type="image/png" href="./favicon/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="./favicon/favicon-16x16.png" sizes="16x16">
     <link rel="manifest" href="./favicon/manifest.json">
@@ -61,7 +61,7 @@
         "givenName": "Matt",
         "familyName": "Troutman",
         "name": "Matt Troutman",
-        "image": "https://s.gravatar.com/avatar/99b2ac4667f94cb56b11257b2e4a6d11.png?s=500",
+        "image": "https://s.gravatar.com/avatar/878ca4931b0ca4dbe828346c8b0e1a706eb44d84ae540d40b261b08852063d32?s=500",
         "jobTitle": "Quality Assurance Engineer",
         "url": "https://trtmn.com"
         }
@@ -117,12 +117,25 @@
   </head>
   <body>
     <!-- Header Block -->
-    <div class="header">
-      <img id="gravatar" src="https://s.gravatar.com/avatar/1c4c5d0074d93391a3987d39e281bee4?s=500" alt="Image" class="img-responsive center-block img-circle">
-      <h2 class="thin" id="name">Matt Troutman</h2>
-      <span class="" id="contact_info"><br><br></span>
-      <a class="dontprint" href="https://resume.trtmn.com/Matt%20Troutman.pdf" target="_blank"><button style="color:black;" type="button" class="btn btn-outline-dark">Printable Resume</button></a>
-
+    <div class="header-block">
+      <div class="header">
+        <div class="header-row">
+          <img id="gravatar" src="https://s.gravatar.com/avatar/878ca4931b0ca4dbe828346c8b0e1a706eb44d84ae540d40b261b08852063d32?s=500" alt="Image" class="img-responsive center-block img-circle">
+          <h2 class="thin" id="name">Matt Troutman</h2>
+        </div>
+        <div class="header-row2">
+          <div class="contact-info" style="font-size: 1em; color: #333;">
+            <span class="pronouns" style="font-size: 1em; color: #333;">He / Him &bull;</span>
+            <a href="tel:14159934749" style="color: #333; text-decoration: none;">415.993.4749</a> &bull; 
+            <a href="mailto:hello@trtmn.com" style="color: #333; text-decoration: none;">hello@trtmn.com</a>
+          </div>
+          <div class="contact-info-print" style="font-size: 1em; color: #333; display: none;">
+            He / Him &bull; 415.993.4749 &bull; hello@trtmn.com
+          </div>
+        </div>
+        <span class="" id="contact_info"><br><br></span>
+        <a class="dontprint" href="https://resume.trtmn.com/Matt%20Troutman.pdf" target="_blank"><button style="color:black;" type="button" class="btn btn-outline-dark">Printable Resume</button></a>
+      </div>
     </div>
     <!-- End Header Block -->
 
@@ -130,48 +143,57 @@
 
       <div class="nest">
         <h3>Experience</h3>
+        <div id="VermontQA" class="nest block-margin">
+          <h4 class="thin jobheader">Quality Assurance Automation Engineer • Vermont Systems • March 2023 - current</h4>
+          <div class="nest">
+            <ul>
+              <li>Helped create a test automation framework using Python, PyTest, and Playwright</li>
+              <li>Created an open source module for Python to report to TestRail</li>
+              <li>Converted several test suites to use the new framework from Selenium</li>
+              <li>Created test plans and implemented new tests for them using PyTest </li>
+            </ul>
+          </div>
+        </div>
         <div id="mmhmm" class="nest block-margin">
           <h4 class="thin jobheader">Senior Quality Assurance Engineer • mmhmm • San Francisco, CA • March 2021 - Sep 2022</h4>
           <div class="nest">
-            • Created a test plan from scratch to ensure the Mac app was functioning properly<br>
-            • Provided regression reporting to the management team about quality of the app<br>
-            • Filed / Triaged incoming bugs to determine priority for release <br>
-            • Coordinated feature releases between the app and service teams<br>
-            • Produced and edited the weekly All-Hands meetings videos using the mmhmm app <br>
-            • Extended my duties to the iOS team to assist in preparation for iOS release to the app store<br>
+            <ul>
+              <li>Created a test plan from scratch to ensure the Mac app was functioning properly</li>
+              <li>Provided regression reporting to the management team about quality of the app</li>
+              <li>Filed / Triaged incoming bugs to determine priority for release</li>
+              <li>Coordinated feature releases between the app and service teams</li>
+              <li>Produced and edited the weekly All-Hands meetings videos using the mmhmm app</li>
+              <li>Extended my duties to the iOS team to assist in preparation for iOS release to the app store</li>
+            </ul>
           </div>
           </div>
 
         <div id="SMQA" class="nest block-margin">
           <h4 class="thin jobheader">Quality Assurance Engineer II • SurveyMonkey • San Mateo, CA • Oct 2014 - Sep 2020</h4>
           <div class="nest">
-            • Created test suites in Postman to test Email template functionality <br>
-            • Created test plans during feature planning <br>
-            • Designed and coded automated test cases in Python (PyTest) for nightly regression testing <br>
-            • Performed manual regression testing to ensure product quality was maintained <br>
-            • QA contact for production-related issues<br>
-            • Led QA efforts in SurveyMonkey GDPR compliance, organizing efforts across multiple teams, and coordinating release testing between developers and QA staff
+            <ul>
+              <li>Created test suites in Postman to test Email template functionality</li>
+              <li>Created test plans during feature planning</li>
+              <li>Designed and coded automated test cases in Python (PyTest) for nightly regression testing</li>
+              <li>Performed manual regression testing to ensure product quality was maintained</li>
+              <li>QA contact for production-related issues</li>
+              <li>Led QA efforts in SurveyMonkey GDPR compliance, organizing efforts across multiple teams, and coordinating release testing between developers and QA staff</li>
+            </ul>
           </div>
 
         </div>
         <div id="AppleQA" class="nest block-margin">
-          <h4 class="thin jobheader">Quality Assurance Engineer • Apple, Inc. • Cupertino, CA • May 2012 - Oct 2014</h4>
+          <h4 class="thin jobheader">Quality Assurance Engineer & Genius • Apple, Inc. • 2005 - 2014</h4>
           <div class="nest">
-            • Oversaw testing of Contacts application (macOS), including feature parity across iOS and macOS Contacts apps <br>
-            • Submitted builds to the Program Office for inclusion into macOS<br>
-            • Triaged incoming bugs and feedback. Assigned to appropriate team members
+            <ul>
+              <li class="thin">Oversaw testing of Contacts application (macOS), including feature parity across iOS and macOS Contacts apps</li>
+              <li>Submitted builds to the Program Office for inclusion into macOS</li>
+              <li>Triaged incoming bugs and feedback. Assigned to appropriate team members</li>
+              <li>Worked with customers to troubleshoot issues with both Mac & iOS hardware & software</li>
+              <li>Provided training sessions to customers of all skill levels with a variety of software and hardware</li>
+              <li class="dontprint">Performed repairs in a timely & accurate manner</li>
+            </ul>
           </div>
-
-        </div>
-        <div class="nest block-margin">
-          <h4 class="thin jobheader">Genius • Apple, Inc. • Leawood, KS • 2005 - 2012</h4>
-          <div class="nest">
-            • Worked with customers to troubleshoot issues with both Mac & iOS hardware & software <br>
-            • Provided training sessions to customers of all skill levels with a variety of software and hardware<br>
-            <span class="dontprint">• Performed repairs in a timely & accurate manner <br></span>
-            • Built a Deploy Studio imaging system in to help customers get up and running after a drive failure
-          </div>
-
         </div>
 
         <!-- <div id="MNUprof" class="nest block-margin dontprint">
@@ -191,33 +213,40 @@
         <div id="GL" class="nest block-margin">
           <h4 class="thin jobheader">Founder and Host • Genius Lounge • Jan 2018 - Present</h4>
           <div class="nest">
-            • Script, record, edit, and upload series of e-learning videos <br>
-            • Promote videos through social channels to drive viewership and brand awareness <br>
-            • Provide in-person one on one technology training and support <br>
-            • On-site and remote video production services for clients <br>
+            <ul>
+              <li>Script, record, edit, and upload series of e-learning videos</li>
+              <li>Promote videos through social channels to drive viewership and brand awareness</li>
+              <li>Provide in-person one on one technology training and support</li>
+              <li>On-site and remote video production services for clients</li>
+            </ul>
           </div>
         </div>
         <div id="metalink" class="nest block-margin">
           <h4 class="thin jobheader">Metalink Project • https://github.com/geniuslounge/metalink</h4>
           <div class="nest">
-            • Created Django (Python) web app to make YouTube content more appealing on social networks <br>
-            • Automated generation of RSS feed and sitemap to notify services of new videos
+            <ul>
+              <li>Created Django (Python) web app to make YouTube content more appealing on social networks</li>
+              <li>Automated generation of RSS feed and sitemap to notify services of new videos</li>
+            </ul>
           </div>
         </div>
       </div>
       <div class="nest block-margin">
         <h3>Education & Certifications</h3>
         <div class="nest">
-          • Bachelor of Arts in Music - MidAmerica Nazarene University, 2012 <br>
-          <span class="">• Apple Certified Macintosh Technician, 2012 </span><br>
+          <ul>
+            <li>Bachelor of Arts in Music - MidAmerica Nazarene University</li>
+            <li>Apple Certified Macintosh Technician, 2012</li>
+          </ul>
         </div>
 
       </div>
       <div class="nest block-margin">
         <h3>Skills</h3>
         <div class="nest">
-          • Python, PyTest, Selenium, Git, Docker, Jira, Confluence, TestRail, Postman, Google Workspace Admin, PostgreSQL<br>
-          • Agile methodologies, Test plan creation, AWS, CI/CD basics, Charles Proxy, Burpsuite
+          <ul>
+            <li>Extensive experience with macOS and iOS troubleshooting, Productivity Apps (Apple, Google, Microsoft), Google Workspace Admin, Wordpress, Jira, Confluence, Zendesk, Python, PyTest, Playwright, Git, Docker, TestRail, Postman, PostgreSQL, MySQL, Agile methodologies, AWS</li>
+          </ul>
         </div>
 
       </div>
