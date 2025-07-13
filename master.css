@@ -11,46 +11,227 @@
         font-size: 14px;
       }
 }
-@font-face {
-  font-family: 'San Fran';
-  font-style: normal;
-  font-weight: 300;
-  src: url(https://trtmn.com/webfonts/sf-pro-text-light.woff) format('woff');
-}
-@font-face {
-  font-family: 'San Fran';
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://trtmn.com/webfonts/sf-pro-text-regular.woff) format('woff');
-}
+/* Noto Sans font is loaded via Google Fonts in HTML */
 @media print {
-
   .dontprint{
     display: none;
   }
-  #name{
-    font-size: 20pt;
+  
+  /* Hide print button and other non-essential elements */
+  .btn, button {
+    display: none !important;
   }
-  #gravatar {
-    width: 80px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    /*border: 4px solid #d3d3d3;*/
-  }
-  h3{
-    margin-top: 5px;
-  }
+  
+  /* Optimize for single page - more aggressive settings */
   body {
-        font-size: 12px;
-      }
+    font-size: 9px;
+    line-height: 1.1;
+    margin: 0;
+    padding: 0;
+    max-height: 100vh;
+    overflow: hidden;
+  }
+  
+  /* Print container to ensure single page */
+  .printit {
+    max-height: 100vh;
+    overflow: hidden;
+    page-break-inside: avoid;
+    page-break-after: avoid;
+  }
+  
+  #name{
+    font-size: 14pt;
+    margin: 0 0 3px 0;
+  }
+  
+  #gravatar {
+    width: 50px;
+    margin: 0 0 3px 0;
+  }
+  
+  .header {
+    margin-bottom: 6px;
+  }
+  
+  h2 {
+    margin: 6px 0 3px 0;
+    font-size: 12px;
+  }
+  
+  h3 {
+    margin: 4px 0 2px 0;
+    font-size: 10px;
+    font-weight: 500;
+  }
+  
+  h4 {
+    font-size: 9px;
+    margin: 3px 0 1px 0;
+  }
+  
+  .nest {
+    margin-left: 12px;
+    margin-right: 6px;
+  }
+  
+  .block-margin {
+    margin-top: 4px;
+  }
+  
+  .jobheader {
+    margin-top: 2px;
+  }
+  
+  .resume-body {
+    max-width: none;
+    margin: 0;
+    max-height: 100vh;
+  }
+  
+  /* Reduce spacing in job descriptions */
+  .nest div {
+    margin-bottom: 1px;
+  }
+  
+  /* Ensure footer doesn't take up space */
+  .footer {
+    display: none;
+  }
+  
+  /* Optimize page breaks */
+  .resume-body {
+    page-break-inside: avoid;
+  }
+  
+  /* Reduce line spacing in job descriptions */
+  br {
+    line-height: 1.0;
+  }
+  
+  /* Compact spacing for skills section */
+  .nest:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* Force single page */
+  @page {
+    size: letter;
+    margin: 0.5in;
+  }
+  
+  /* Additional compacting for content */
+  .nest br {
+    display: none;
+  }
+  
+  /* Reduce spacing between sections */
+  .block-margin + .block-margin {
+    margin-top: 2px;
+  }
+  
+  /* Compact job descriptions */
+  .nest .nest {
+    margin-left: 8px;
+  }
+  
+  /* Ensure no content overflows */
+  * {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Compact contact info */
+  #contact_info {
+    margin: 2px 0;
+  }
+  
+  /* Remove two-column layout for bullet points in job descriptions */
+  .nest .nest > div {
+    column-count: 1;
+    column-gap: 0;
+    column-fill: initial;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Remove two-column layout for skills section */
+  .nest:last-child .nest {
+    column-count: 1;
+    column-gap: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  /* Ensure header doesn't take too much space */
+  .header img {
+    max-height: 50px;
+  }
+  
+  /* Compact spacing for all text elements */
+  p, div {
+    margin: 0;
+    padding: 0;
+  }
+  /* Ensure job headers don't get split */
+  .jobheader {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    column-span: all;
+  }
+  /* Ensure section headers don't get split */
+  h3 {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    column-span: all;
+  }
+  /* Increase vertical spacing below section headers */
+  h3 {
+    margin-bottom: 8px;
+  }
+  /* Increase vertical spacing below job headers */
+  .jobheader {
+    margin-bottom: 6px;
+  }
+  /* Increase vertical spacing between bullet points/items */
+  .nest .nest > div > br {
+    margin-bottom: 8px;
+  }
+  .nest .nest > div {
+    margin-bottom: 8px;
+  }
+  /* Increase vertical spacing between main sections */
+  .block-margin {
+    margin-top: 16px;
+  }
+  .contact-info {
+    display: none !important;
+  }
+  .contact-info-print {
+    display: none !important;
+  }
+}
+
+@media print {
+  .contact-info {
+    display: none !important;
+  }
+  .contact-info-print {
+    display: block !important;
+  }
+}
+
+@media screen {
+  .contact-info-print {
+    display: none !important;
+  }
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-    font-family: 'San Fran';
+    font-family: 'Noto Sans', sans-serif;
 }
 
 body {
-  font-family: 'San Fran', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
 }
 h2{
   margin-top: 10px;
@@ -117,4 +298,108 @@ a:focus{
 .footerlink {
   margin: 5px;
 
+}
+
+@media print {
+  .header-block {
+    break-after: avoid;
+    page-break-after: avoid;
+    margin-bottom: 4px;
+    padding-bottom: 0;
+  }
+  .header {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  @page {
+    size: letter;
+    margin: 0.2in;
+  }
+  body {
+    font-size: 8.5px;
+    line-height: 1.08;
+    margin: 0;
+    padding: 0;
+    max-height: 100vh;
+    overflow: hidden;
+  }
+  h3 {
+    margin-bottom: 5px;
+  }
+  .jobheader {
+    margin-bottom: 4px;
+  }
+  ul, ol {
+    margin-top: 0;
+    margin-bottom: 4px;
+    padding-left: 18px;
+  }
+  li {
+    margin-bottom: 2px;
+    font-weight: 300;
+    font-family: inherit;
+  }
+  .block-margin {
+    margin-top: 8px;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0;
+    margin-bottom: 0;
+  }
+  .header-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+  }
+  .header-row2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    margin-top: 2px;
+    margin-bottom: 4px;
+  }
+  #gravatar {
+    width: 48px;
+    height: 48px;
+    margin: 0;
+    display: block;
+  }
+  #name, .pronouns, .contact-info-print {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  .pronouns {
+    margin: 0 !important;
+    padding: 0 !important;
+    display: inline;
+  }
+  .header-block {
+    margin-bottom: 4px;
+  }
+}
+
+@media print {
+  .header-block {
+    margin-top: 32px;
+    margin-bottom: 4px;
+  }
+}
+
+@media print {
+  .header-row2 {
+    font-weight: 300;
+    margin-top: 10px;
+  }
 }
