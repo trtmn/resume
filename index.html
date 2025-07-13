@@ -112,6 +112,11 @@
       
       // Also run when window is resized
       window.addEventListener('resize', optimizeForPrint);
+
+      // Reload the page after print dialog is closed to fix web view shrinking
+      window.addEventListener('afterprint', function() {
+        window.location.reload();
+      });
     </script>
 
   </head>
